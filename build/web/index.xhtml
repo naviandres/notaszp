@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+    <h:head>
+        <title>SGADIE</title>
+        <h:outputStylesheet library="semantic" name="semantic.css"/>
+        <h:outputStylesheet library="css" name="micss.css"/>
+    </h:head>
+    <h:body>
+        <div class="ui centered pheader full back espacio" id="inicio">
+            <div class="ui stackable grid container centered">
+                <div class="ui text container">
+                    <h2 class="ui center aligned icon header">
+                        <i class="circular users icon"></i>
+                        SGADIE
+                    </h2>
+                    <div class="sub header">Sistema de Gestion Documental para Instituciones Educativas</div>
+                    <h1 class="bienvenido">BIENVENIDOS</h1>
+                </div>     
+            </div>
+        </div>		
+        <div class="ui centered pheader full espacio" id="sgadie">
+            <div class="ui stackable grid container centered">
+                <div class="ui text container">
+                    <h2 class="ui center aligned icon header">
+                        ¿Que ofrece Sgadie?
+                    </h2>
+                </div>     
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui three column grid">
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="university icon"></i>
+                        <div class="content">
+                            Instituciones Educativas 
+                            <div class="sub header">Tienen control y administracion de los procesos academicos.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="users icon"></i>
+                        <div class="content">
+                            Padres de Familias
+                            <div class="sub header">Observar de manera permanente los reportes academicos y disciplinario de sus hijos.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="student icon"></i>
+                        <div class="content">
+                            Estudiantes
+                            <div class="sub header">Estar informados de sus respectivas notas academicas.</div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui three column grid">
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="user circle icon"></i>
+                        <div class="content">
+                            Docentes
+                            <div class="sub header">Ingresar los reportes academicos de cada uno de los estudiates.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="file text outlines icon"></i>
+                        <div class="content">
+                            Constancias Academicas 
+                            <div class="sub header">Ademas de los reportes academicos Sgadie cuenta con un constacias para cada docentes y estudiante.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="download icon"></i>
+                        <div class="content">
+                            Documentos
+                            <div class="sub header">Descargas de documentos al instante.</div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div> 
+        <div class="ui inverted vertical segment" id="footer">
+            <div class="ui center aligned container">
+                <div class="ui stackable inverted divided grid">
+                    <div class="five wide column">
+                        <h4 class="ui inverted header">Mapa del Sitio</h4>
+                        <div class="ui inverted link list">
+                            <a href="#inicio" class="item">Inicio</a>
+                            <a href="#sgadie" class="item">Sgadie</a>
+                            <a href="#footer" class="item">Contactenos</a>
+                            <a onclick="modal()" class="item">Iniciar sesion</a>
+                        </div>
+                    </div>
+                    <div class="nine wide column">
+                        <h4 class="ui inverted header">Contactenos</h4>
+                        <a href="https://www.facebook.com/aldair.james"><i class="big facebook square icon"></i> </a>
+                        <a href="https://www.instagram.com/aldiithoovqz/?hl=es"><i class="big inverted grey instagram icon"></i> </a> 
+                        <a href="https://plus.google.com/117096902846410203188"><i class="big inverted red google plus icon"></i> </a>           
+
+                    </div>
+                </div>
+                <div class="ui inverted section divider"></div>
+                <h4 class="ui inverted header"><img src="#{request.contextPath}/resources/img/GAES.jpg" class="ui centered mini image"/>GAES 5</h4>
+            </div>
+        </div>
+
+        <div class="ui fixed secondary pointing menu">
+            <a class="red item" href="#inicio"><i class="home icon"></i> Inicio  </a>
+            <a class="yellow item" href="#sgadie"><i class="laptop icon"></i> Sgadie </a>
+            <a class="teal item" href="#footer"><i class="call icon"></i> Contactanos </a>
+            <div class="right menu">
+                <a class="ui green button" onclick="modal()"><i class="sign in icon"></i> Iniciar Sesion</a> 
+            </div>
+        </div>
+        <div class="ui centered pheader full back espacio" id="inicio">
+            <div class="ui stackable grid container centered">
+                <div class="ui text container">
+                    <h2 class="ui center aligned icon header">
+                        <i class="circular users icon"></i>
+                        SGADIE
+                    </h2>
+                    <div class="sub header">Sistema de Gestion Documental para Instituciones Educativas</div>
+                    <h1 class="bienvenido">BIENVENIDOS</h1>
+                </div>     
+            </div>
+        </div>		
+        <div class="ui centered pheader full espacio" id="sgadie">
+            <div class="ui stackable grid container centered">
+                <div class="ui text container">
+                    <h2 class="ui center aligned icon header">
+                        ¿Que ofrece Sgadie?
+                    </h2>
+                </div>     
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui three column grid">
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="university icon"></i>
+                        <div class="content">
+                            Instituciones Educativas 
+                            <div class="sub header">Tienen control y administracion de los procesos academicos.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="users icon"></i>
+                        <div class="content">
+                            Padres de Familias
+                            <div class="sub header">Observar de manera permanente los reportes academicos y disciplinario de sus hijos.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="student icon"></i>
+                        <div class="content">
+                            Estudiantes
+                            <div class="sub header">Estar informados de sus respectivas notas academicas.</div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui three column grid">
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="user circle icon"></i>
+                        <div class="content">
+                            Docentes
+                            <div class="sub header">Ingresar los reportes academicos de cada uno de los estudiates.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="file text outlines icon"></i>
+                        <div class="content">
+                            Constancias Academicas 
+                            <div class="sub header">Ademas de los reportes academicos Sgadie cuenta con un constacias para cada docentes y estudiante.</div>
+                        </div>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2 class="ui icon header">
+                        <i class="download icon"></i>
+                        <div class="content">
+                            Documentos
+                            <div class="sub header">Descargas de documentos al instante.</div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div> 
+        <div class="ui inverted vertical segment" id="footer">
+            <div class="ui center aligned container">
+                <div class="ui stackable inverted divided grid">
+                    <div class="five wide column">
+                        <h4 class="ui inverted header">Mapa del Sitio</h4>
+                        <div class="ui inverted link list">
+                            <a href="#inicio" class="item">Inicio</a>
+                            <a href="#sgadie" class="item">Sgadie</a>
+                            <a href="#footer" class="item">Contactenos</a>
+                            <a onclick="modal()" class="item">Iniciar sesion</a>
+                        </div>
+                    </div>
+                    <div class="nine wide column">
+                        <h4 class="ui inverted header">Contactenos</h4>
+                        <a href="https://www.facebook.com/aldair.james"><i class="big facebook square icon"></i> </a>
+                        <a href="https://www.instagram.com/aldiithoovqz/?hl=es"><i class="big inverted grey instagram icon"></i> </a> 
+                        <a href="https://plus.google.com/117096902846410203188"><i class="big inverted red google plus icon"></i> </a>           
+
+                    </div>
+                </div>
+                <div class="ui inverted section divider"></div>
+                <h4 class="ui inverted header"><img src="#{request.contextPath}/resources/img/GAES.jpg" class="ui centered mini image"/>GAES 5</h4>
+            </div>
+        </div>
+
+        <div class="ui mini modal" id="modal1">
+            <div class="header"><i class="sign in icon"></i>INICIAR SESION</div>
+            <div class="content">
+                <h:form class="ui " prependId="false" >
+                    <div class="ui centered grid">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <input placeholder="Usuario" jsf:value="#{sessionController.identificacion}" type="text"/>
+                                <i class="users icon"></i>
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui left icon input">                                
+                                <input placeholder="Contraseña" jsf:value="#{sessionController.clave}" type="password"/>
+                                <i class="unlock alternate icon"></i>
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <h:commandButton class="ui inverted green button" value="Entrar"  action="#{sessionController.usuarioInicarSesion()}" />
+                        </div>
+                    </div>
+                </h:form>
+            </div>
+        </div>
+        <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+        <h:outputScript library="js" name="semantic.min.js"/>
+        <script type="text/javascript">
+            function modal() {
+                $('.mini.modal')
+                        .modal('show')
+                        ;
+            } 
+        </script>
+    </h:body>
+</html>
+

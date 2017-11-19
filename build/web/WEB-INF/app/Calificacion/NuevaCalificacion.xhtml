@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:composition template="/WEB-INF/template/template.xhtml">
+        <ui:define name="contenido">
+            <div class="ui raised very padded text container segment">
+
+                <h:form class="ui form" prependId="false">
+                    <h2 class="ui center aligned header"/>
+                    <i class="add circle icon"></i> INGRESAR NUEVA CALIFICACIÓN
+                    <div class="ui hidden divider"></div>                 
+                    <h:messages id="mensa" class="#{calificacionController.colorAlerta()}" globalOnly="true"/>
+                    <div class="ui hidden divider"></div>    
+                    <div class="two fields">
+                        <div class="field">
+                            <label>nota</label>
+                            <input id="nota" required="true" jsf:value="#{calificacionController.calificacion.nota}" placeholder="Nota" type="text" jsf:requiredMessage="Es necesario este campo"/>
+                        </div>
+                        <div class="twelve wide field">
+                            <label>CC:Estudiante</label>  
+                            <h:selectOneMenu value="#{calificacionController.est}" id="estudiante" required="true" requiredMessage="Es necesario un estudiante">
+                                <f:selectItem itemLabel="Seleccione un estudiante" itemDisabled="disabled"/>
+                                <f:selectItems value="#{estudianteController.estudiantes}" var="e" itemLabel="#{e.fkIdUsuario.identificacion} " itemValue="#{e.idEstudiante}" />
+                            </h:selectOneMenu> 
+                        </div>
+
+                        <div class="twelve wide field">
+                            <label>Asignatura</label>  
+                            <h:selectOneMenu value="#{calificacionController.asi}" id="asignatura" required="true" requiredMessage="Es necesaria la asignatura" >
+                                <f:selectItem itemLabel="Seleccione una asignatura" itemDisabled="disabled"/>
+                                <f:selectItems value="#{asignaturaController.asignaturas}" var="a" itemLabel="#{a.nombre} " itemValue="#{a.idtblAsignaturas}" />
+                            </h:selectOneMenu> 
+                        </div>
+                    </div>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui hidden divider"></div>      
+                    <div class="ui centered grid">
+                        <h:commandButton id="guardar" tabindex="0" value="Crear" class="ui green button" action="#{calificacionController.registrar()}"></h:commandButton>
+                        <a class="ui blue button" href="ListaCalificacion.xhtml">Listar calificacines</a>
+                    </div> 
+                </h:form>
+
+            </div>
+        </ui:define>
+    </ui:composition>
+</html>
+
